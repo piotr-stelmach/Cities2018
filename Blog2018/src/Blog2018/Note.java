@@ -21,6 +21,19 @@ public class Note {
     public String toString() {
         return "Note{" + "title=" + title + ", content=" + content + ", comments=" + comments + '}';
     }
+
+    public int numberOfComments() {
+        return comments.size();
+    }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+    
+    
+
+   
+    
     
     
 }

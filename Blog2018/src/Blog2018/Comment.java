@@ -27,6 +27,11 @@ public class Comment {
     public String toString() {
         return "Comment{" + "content=" + content + ", author=" + author + ", date=" + date + '}';
     }
+
+    public LocalDate getDate() {
+        return date;
+    }
+    
     
     
     
