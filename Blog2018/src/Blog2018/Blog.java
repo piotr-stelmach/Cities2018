@@ -19,7 +19,7 @@ public class Blog {
 
     @Override
     public String toString() {
-        
+        return title+"\n\n"+notes;
       
     }
     

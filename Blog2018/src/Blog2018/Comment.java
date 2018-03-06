@@ -1,5 +1,5 @@
 
-package pl.kolekcje.zad7;
+package Blog2018;
 
 import java.time.LocalDate;
 import java.util.Date;

@@ -1,5 +1,5 @@
 
-package pl.kolekcje.zad7;
+package Blog2018;
 
 import java.util.ArrayList;
 import java.util.List;
