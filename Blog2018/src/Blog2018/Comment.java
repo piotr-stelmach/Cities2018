@@ -2,7 +2,7 @@
 package Blog2018;
 
 import java.time.LocalDate;
-import java.util.Date;
+
 
 public class Comment {
     private String content;

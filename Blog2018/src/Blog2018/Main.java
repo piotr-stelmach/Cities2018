@@ -16,5 +16,7 @@ public class Main {
         n.add(c1);
         Comment c2=new Comment("Szymon","Troche nie do konca o to co mi chodzilo");
         n.add(c2);
+        
+        System.out.println(b);
     }
 }
