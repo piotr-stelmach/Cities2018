@@ -2,6 +2,8 @@
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 
 public class Countries {
@@ -23,6 +25,18 @@ public class Countries {
     public Collection<String> countries(){
         return countries.keySet();
     }
+    
+    public Collection<String> sortedCountries(){
+        TreeSet set = new TreeSet();
+        set.addAll(countries());
+        return set;
+    }
+    
+    public Collection<String> sortedCapitals(){
+        TreeSet set = new TreeSet();
+        set.addAll(capitals());
+        return set;
+    }
     @Override
     public String toString() {
         return "Countries{" + "countries=" + countries + '}';
@@ -30,7 +44,11 @@ public class Countries {
     
     public static void main(String[] args){
         Countries c= new Countries();
-        System.out.println("c");
+        System.out.println(c);
+        System.out.println(c.countries());
+        System.out.println(c.capitals());
+        System.out.println(c.sortedCapitals());
+        System.out.println(c.sortedCountries());
     }
     
     
