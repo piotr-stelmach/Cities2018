@@ -37,6 +37,21 @@ public class Countries {
         set.addAll(capitals());
         return set;
     }
+    
+    public Map<String,String> sortedByCountries(){
+        TreeMap mp=new TreeMap(countries);
+        return mp;  
+    }
+    
+    public Map<String,String> sortedByCapitals(){
+        Map<String,String> map=new TreeMap();
+        for(String str:countries.keySet()){
+            String value=countries.get(str);
+            map.put(value, str);
+        }
+        return map;
+    }
+    
     @Override
     public String toString() {
         return "Countries{" + "countries=" + countries + '}';
@@ -49,6 +64,8 @@ public class Countries {
         System.out.println(c.capitals());
         System.out.println(c.sortedCapitals());
         System.out.println(c.sortedCountries());
+        System.out.println(c.sortedByCountries());
+        System.out.println(c.sortedByCapitals());
     }
     
     
